@@ -43,7 +43,41 @@
 
 
 ### RL
-    - RL is more autonomous learning
+- RL is more autonomous learning
+
+## Lecture 3
+### Announcements
+- HW 0 due 9/13
+- HW 1 Due 9/20
+- Read Ch 3 (super important before come to class)
+
+### k-arm bandit setting
+- no sequence of action
+- don't know reward distribution
+- 1-basic algo solved in last class 
+    - simple bandit algorithm using Q-learning
+
+$Algorithm:\ A\ simple\ bandit\ algorithm$
+
+$Initialize,\ for\ a = 1\  to\ k$
+
+
+-  The problem with the algorithm is that it weights all rewards equally by $\frac{1}{n}$.
+
+$Q_{n+1}= Q_n + \frac{1}{n}[R_n -Q_n]$
+
+$Q_{n+1}= Q_n + \alpha[R_n -Q_n]$
+
+$Q_{n+1} = \alpha R_n + (1-\alpha)Q_n $
+$Q_{n+1} = \alpha R_n + (1-\alpha)[\alpha R_{n-1} + (1-\alpha) Q_{n-1} ]$
+
+$Q_{n+1}  = $
+
+
+
+- if $\alpha =1$ $Q_n$ will never change, as reward term $R_n$ will be zero
+-   
+
 
 
 - Overview of today's lecture.
